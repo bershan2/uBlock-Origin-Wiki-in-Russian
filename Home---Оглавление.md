@@ -2,66 +2,66 @@
 - [Оригинал на английском языке](https://github.com/gorhill/uBlock/wiki) 
 - [Китайский перевод этой Wiki: 中文](https://github.com/fang5566/uBlock/wiki/Home)
 - [Лог изменений (на английском языке)](https://github.com/gorhill/uBlock/releases) / [Версии от 0.9.3.0 до 0.2.0.0](https://github.com/chrisaljoudi/uBlock/releases) / [Версии ранее 0.1.4.8](https://github.com/gorhill/uBlock/wiki/Change-log)
-- [О необходимых разрешениях в Chromium](../About-the-required-permissions) **(не переведено)**
-    - [Можно ли доверять uBlock?](../Can-you-trust-uBlock%3F) **(не переведено)**
-- [Политика конфиденциальности](../Privacy-policy) **(не переведено)**
-- [Руководства по ...](../How-to-...) **(не переведено)**
+- [О необходимых разрешениях в Chromium](./About-the-required-permissions) **(не переведено)**
+    - [Можно ли доверять uBlock?](./Can-you-trust-uBlock%3F) **(не переведено)**
+- [Политика конфиденциальности](./Privacy-policy) **(не переведено)**
+- [Руководства по ...](./How-to-...) **(не переведено)**
 - Краткие руководства:
-    - [Всплывающий пользовательский интерфейс](../Quick-guide:-popup-user-interface) **(не переведено)**
-        - [Переключатели для каждого сайта](../Per-site-switches) **(не переведено)**
-    - [Панель управления](../Dashboard) **(не переведено)**
-        - Вкладка [_Настройки_](../Dashboard:-Settings) **(не переведено)**
-        - Вкладка [_Сторонние фильтры_](../Dashboard:-3rd-party-filters) **(не переведено)**
-            - [Списки Фильтров со всего Интернета](../Filter-lists-from-around-the-web) **(не переведено)**
+    - [Всплывающий пользовательский интерфейс](./Quick-guide:-popup-user-interface) **(не переведено)**
+        - [Переключатели для каждого сайта](./Per-site-switches) **(не переведено)**
+    - [Панель управления](./Dashboard) **(не переведено)**
+        - Вкладка [_Настройки_](./Dashboard:-Settings) **(не переведено)**
+        - Вкладка [_Сторонние фильтры_](./Dashboard:-3rd-party-filters) **(не переведено)**
+            - [Списки Фильтров со всего Интернета](./Filter-lists-from-around-the-web) **(не переведено)**
         - Вкладка _Мои фильтры_ (TODO)
-            - [Синтаксис статических фильтров](../Static-filter-syntax) **(не переведено)**
+            - [Синтаксис статических фильтров](./Static-filter-syntax) **(не переведено)**
         - Вкладка _Мои правила_ (TODO)
-            - [Синтаксис правил динамических фильтров](../Dynamic-filtering:-rule-syntax) **(не переведено)**
-        - Вкладка [_Белый список_](../Dashboard:-Whitelist) **(не переведено)**
-            - [Как добавить веб-сайт в _Белый список_](../How-to-whitelist-a-web-site) **(не переведено)**
-        - [Settings: importing from/exporting to cloud storage](../Cloud-storage) **(не переведено)**
-    - [Blocking mode](../Blocking-mode) **(не переведено)**
-        - [Very easy mode](../Blocking-mode:-very-easy-mode) **(не переведено)**
-        - [Easy mode](../Blocking-mode:-easy-mode) (по умолчанию) **(не переведено)**
-            - [Easy mode + enhanced security/privacy](../Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags) **(не переведено)**
-            - [Easy mode + more privacy](../Dynamic-filtering:-to-easily-reduce-privacy-exposure) **(не переведено)**
-        - [Medium mode](../Blocking-mode:-medium-mode) (optimal for advanced users) **(не переведено)**
-        - [Hard mode](../Blocking-mode:-hard-mode) **(не переведено)**
-        - [Nightmare mode](../Blocking-mode:-nightmare-mode) **(не переведено)**
-    - [Element picker](../Element-picker) **(не переведено)**
-    - [Strict blocking](../Strict-blocking) **(не переведено)**
-        - [Badware risks](../Badware-risks) **(не переведено)**
-    - [The logger](../The-logger) **(не переведено)**
-    - [Dynamic filtering](../Dynamic-filtering) **(не переведено)**
-        - [Quick guide](../Dynamic-filtering:-quick-guide) **(не переведено)**
-        - [Default-deny](../Dynamic-filtering:-default-deny) **(не переведено)**
-        - [Turn off uBlock everywhere](../Dynamic-filtering:-turn-off-uBlock-everywhere) **(не переведено)**
-        - [Turn off uBlock everywhere _except_... (blacklist mode)](../Dynamic-filtering:-turn-off-uBlock-everywhere-except) **(не переведено)**
-    - [URL filtering](../Dynamic-URL-filtering) **(не переведено)**
-    - [DOM inspector](../DOM-inspector) **(не переведено)**
-    - [Overview of uBlock's network filtering engine](../Overview-of-uBlock's-network-filtering-engine) **(не переведено)**
-        - [Overview of uBlock's network filtering engine: details](../Overview-of-uBlock's-network-filtering-engine:-details) **(не переведено)**
-        - [Does uBlock block ads or just hide them?](../Does-uBlock-block-ads-or-just-hide-them%3F) **(не переведено)**
-        - [Doesn't uBlock Origin add overhead to page load?](../Doesn't-uBlock-Origin-add-overhead-to-page-load%3F) **(не переведено)**
-- [Tools](../Tools) **(не переведено)**
-- [Deploying uBlock Origin](../Deploying-uBlock-Origin) **(не переведено)**
-- [Исправление проблем](../Troubleshooting) **(не переведено)**
-    - [Известные программы удаляющие uBlock Origin](../Software-known-to-have-uninstalled-uBlock-Origin) **(не переведено)**
-- [Часто задаваемые вопросы (ЧаВо)](../FAQ)  **(не переведено)**
+            - [Синтаксис правил динамических фильтров](./Dynamic-filtering:-rule-syntax) **(не переведено)**
+        - Вкладка [_Белый список_](./Dashboard:-Whitelist) **(не переведено)**
+            - [Как добавить веб-сайт в _Белый список_](./How-to-whitelist-a-web-site) **(не переведено)**
+        - [Settings: importing from/exporting to cloud storage](./Cloud-storage) **(не переведено)**
+    - [Blocking mode](./Blocking-mode) **(не переведено)**
+        - [Very easy mode](./Blocking-mode:-very-easy-mode) **(не переведено)**
+        - [Easy mode](./Blocking-mode:-easy-mode) (по умолчанию) **(не переведено)**
+            - [Easy mode + enhanced security/privacy](./Dynamic-filtering:-Benefits-of-blocking-3rd-party-iframe-tags) **(не переведено)**
+            - [Easy mode + more privacy](./Dynamic-filtering:-to-easily-reduce-privacy-exposure) **(не переведено)**
+        - [Medium mode](./Blocking-mode:-medium-mode) (optimal for advanced users) **(не переведено)**
+        - [Hard mode](./Blocking-mode:-hard-mode) **(не переведено)**
+        - [Nightmare mode](./Blocking-mode:-nightmare-mode) **(не переведено)**
+    - [Element picker](./Element-picker) **(не переведено)**
+    - [Strict blocking](./Strict-blocking) **(не переведено)**
+        - [Badware risks](./Badware-risks) **(не переведено)**
+    - [The logger](./The-logger) **(не переведено)**
+    - [Dynamic filtering](./Dynamic-filtering) **(не переведено)**
+        - [Quick guide](./Dynamic-filtering:-quick-guide) **(не переведено)**
+        - [Default-deny](./Dynamic-filtering:-default-deny) **(не переведено)**
+        - [Turn off uBlock everywhere](./Dynamic-filtering:-turn-off-uBlock-everywhere) **(не переведено)**
+        - [Turn off uBlock everywhere _except_... (blacklist mode)](./Dynamic-filtering:-turn-off-uBlock-everywhere-except) **(не переведено)**
+    - [URL filtering](./Dynamic-URL-filtering) **(не переведено)**
+    - [DOM inspector](./DOM-inspector) **(не переведено)**
+    - [Overview of uBlock's network filtering engine](./Overview-of-uBlock's-network-filtering-engine) **(не переведено)**
+        - [Overview of uBlock's network filtering engine: details](./Overview-of-uBlock's-network-filtering-engine:-details) **(не переведено)**
+        - [Does uBlock block ads or just hide them?](./Does-uBlock-block-ads-or-just-hide-them%3F) **(не переведено)**
+        - [Doesn't uBlock Origin add overhead to page load?](./Doesn't-uBlock-Origin-add-overhead-to-page-load%3F) **(не переведено)**
+- [Tools](./Tools) **(не переведено)**
+- [Deploying uBlock Origin](./Deploying-uBlock-Origin) **(не переведено)**
+- [Исправление проблем](./Troubleshooting) **(не переведено)**
+    - [Известные программы удаляющие uBlock Origin](./Software-known-to-have-uninstalled-uBlock-Origin) **(не переведено)**
+- [Часто задаваемые вопросы (ЧаВо)](./FAQ)  **(не переведено)**
 - Установите через [Дополнения Mozilla Firefox](https://addons.mozilla.org/firefox/addon/ublock-origin/), [Интернет-магазин Chrome](https://chrome.google.com/webstore/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm), [Дополнения к Opera](https://addons.opera.com/en-gb/extensions/details/ublock/), или [вручную](https://github.com/gorhill/uBlock/tree/master/dist#install).
-    - [Ответы автора на избранные отзывы в магазинах приложений](../My-answers-to-web-store-reviews-where-appropriate) **(не переведены)**
-- [О конфиденциальности](../Privacy-stuff) **(не переведено)**
-- [Tricks and tips waterfall](../Tips-and-tricks-waterfall) **(не переведено)**
+    - [Ответы автора на избранные отзывы в магазинах приложений](./My-answers-to-web-store-reviews-where-appropriate) **(не переведены)**
+- [О конфиденциальности](./Privacy-stuff) **(не переведено)**
+- [Tricks and tips waterfall](./Tips-and-tricks-waterfall) **(не переведено)**
 - Various performance/efficiency topics **(не переведено)**
-    - [Потребление памяти: что происходит внутри uBlock после установки](../Memory-footprint:-what-happens-inside-uBlock-after-installation) **(не переведено)**
-    - [Сравнение производительности uBlock и ABP](../uBlock-vs.-ABP:-efficiency-compared) **(не переведено)**
-    - [Own memory usage: benchmarks over time](../Own-memory-usage:-benchmarks-over-time) **(не переведено)**
-    - [Contributed memory usage: benchmarks over time](../Contributed-memory-usage:-benchmarks-over-time) **(не переведено)**
-    - [Counterpoint: Who care about efficiency, I have 8 GB and/or a quad-core CPU](../Who-cares-about-efficiency,-I-have-8-GB-and%7Cor-a-quad-core-CPU) **(не переведено)**
-    - [Миф: uBlock потребляет более 80MB](../Myth:-uBlock-consumes-over-80MB) **(не переведено)**
-    - [Myth: uBlock is just slightly less resource intensive than Adblock Plus](../Myth:-uBlock-is-just-slightly-less-resource-intensive-than-Adblock-Plus) **(не переведено)**
-    - [Counterpoints: unsorted](../Counterarguments) **(не переведено)**
-    - [uBlock and others: Blocking ads, trackers, malwares](../uBlock-and-others:-Blocking-ads,-trackers,-malwares) **(не переведено)**
-    - [Об "А другое расширение говорит что заблокировало больше!"](../About-%22This-other-extension-reports-more-stuff-blocked!%22) **(не переведено)**
-    - [Подборка видео демонстрирующих разницу в скорости загрузки сложных сайтов](../Various-videos-showing-side-by-side-comparison-of-the-load-speed-of-complex-sites) **(не переведено)**
-- [Почему автор не принимает пожертвования?](../Why-don't-you-accept-donations%3F)
+    - [Потребление памяти: что происходит внутри uBlock после установки](./Memory-footprint:-what-happens-inside-uBlock-after-installation) **(не переведено)**
+    - [Сравнение производительности uBlock и ABP](./uBlock-vs.-ABP:-efficiency-compared) **(не переведено)**
+    - [Own memory usage: benchmarks over time](./Own-memory-usage:-benchmarks-over-time) **(не переведено)**
+    - [Contributed memory usage: benchmarks over time](./Contributed-memory-usage:-benchmarks-over-time) **(не переведено)**
+    - [Counterpoint: Who care about efficiency, I have 8 GB and/or a quad-core CPU](./Who-cares-about-efficiency,-I-have-8-GB-and%7Cor-a-quad-core-CPU) **(не переведено)**
+    - [Миф: uBlock потребляет более 80MB](./Myth:-uBlock-consumes-over-80MB) **(не переведено)**
+    - [Myth: uBlock is just slightly less resource intensive than Adblock Plus](./Myth:-uBlock-is-just-slightly-less-resource-intensive-than-Adblock-Plus) **(не переведено)**
+    - [Counterpoints: unsorted](./Counterarguments) **(не переведено)**
+    - [uBlock and others: Blocking ads, trackers, malwares](./uBlock-and-others:-Blocking-ads,-trackers,-malwares) **(не переведено)**
+    - [Об "А другое расширение говорит что заблокировало больше!"](./About-%22This-other-extension-reports-more-stuff-blocked!%22) **(не переведено)**
+    - [Подборка видео демонстрирующих разницу в скорости загрузки сложных сайтов](./Various-videos-showing-side-by-side-comparison-of-the-load-speed-of-complex-sites) **(не переведено)**
+- [Почему автор не принимает пожертвования?](./Why-don't-you-accept-donations%3F)
