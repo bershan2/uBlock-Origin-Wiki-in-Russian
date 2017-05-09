@@ -1,3 +1,6 @@
-I don't want the administrative workload coming with donations. I don't want the project to become in need of funding in any way: no dedicated home page + no forum = no cost = no need for funding. I want to be free to move onto something else if ever I get tired working on these projects (no donations = no expectations).
+# Почему я (автор) не принимаю пожертвования?
+Оригинал [_Why don't you accept donations?_](https://github.com/gorhill/uBlock/wiki/Why-don't-you-accept-donations%3F) от 16 февр. 2015 переведён 9 апр. 2017.
 
-Have a thought for the maintainers of the various lists. These lists are everything. This can't be emphasized enough.
+Я ([Raymond Hill](https://github.com/gorhill))  не хочу администаративой нагрузки связанной с пожертвованиями. Я не хочу чтобы этот проект вообще нуждался в средствах, поэтому не завожу специализированную веб-страницу, или форум: нет расходов -- нет необходимости в средствах. Я хочу иметь возможность заняться чем-нибудь другим, если когда-нибудь эти проекты наскучать мне (нет пожертвований -- нет ожиданий).
+
+Подумайте о составителях различных списков фильтров. Эти списки -- наше всё. Никаких слов не достаточно для описания их значимости.
