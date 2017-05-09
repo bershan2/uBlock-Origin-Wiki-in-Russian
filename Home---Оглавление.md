@@ -18,7 +18,7 @@
         - Вкладка _Мои правила_ (TODO) **(не переведено)**
             - [Синтаксис правил динамических фильтров](https://github.com/gorhill/uBlock/wiki/Dynamic-filtering:-rule-syntax) **(не переведено)**
         - Вкладка [_Белый список_](https://github.com/gorhill/uBlock/wiki/Dashboard:-Whitelist) **(не переведено)**
-            - [How to whitelist a web site](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site) **(не переведено)**
+            - [Как добавить веб-сайт в _Белый список_](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site) **(не переведено)**
         - [Settings: importing from/exporting to cloud storage](https://github.com/gorhill/uBlock/wiki/Cloud-storage)  **(не переведено)**
     - [Blocking mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode) **(не переведено)**
         - [Very easy mode](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-very-easy-mode) **(не переведено)**
