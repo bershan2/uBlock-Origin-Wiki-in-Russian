@@ -1,6 +1,9 @@
-### uBlock's required (Chromium) permissions
+# О необходимых разрешениях в Chromium
+Оригинал [_About the required permissions_](https://github.com/gorhill/uBlock/wiki/About-the-required-permissions) от 8 июня 2015 переведён 9 апр. 2017.
 
-uBlock's required permissions are the same as those of [Privacy Badger](https://www.eff.org/privacybadger), except that Privacy Badger requires one extra permission, `cookies`. This is  uBlock's required permissions:
+### Необходимые разрешения (в Chromium) для работы uBlock
+
+uBlock требует такие-же разрешения что и [Privacy Badger](https://www.eff.org/privacybadger), разве что Privacy Badger также запрашивает ещё одно разрешение -- куки (`cookies`). Вот перечень разрешений необходимых для работы uBlock:
 
     "permissions": [
         "contextMenus",
@@ -15,11 +18,11 @@ uBlock's required permissions are the same as those of [Privacy Badger](https://
         "https://*/*"
     ],
 
-[`"privacy"`](https://developer.chrome.com/extensions/privacy) is the only permission added in [version 0.9.8.2](https://github.com/gorhill/uBlock/releases/tag/0.9.8.2). All the others were there since when uBlock was first published (except for `"contextMenus"` which was added at some point, to support blocking element from within the context menu).
+[`"privacy"`](https://developer.chrome.com/extensions/privacy) -- это единственное разрешение добавленное начиная с [ версии 0.9.8.2](https://github.com/gorhill/uBlock/releases/tag/0.9.8.2). Все прочие разрешения требовались с первого релиза uBlock (кроме `"contextMenus"`, который был добавлен для поддержки возможности блокировать элементы через контекстное меню).
 
-The `privacy` permission is needed for uBlock to be able to disable the setting "Prefetch resources to load pages more quickly". This will ensure no connection is opened at all for blocked requests: It's for your own protection privacy-wise.
+Разрешение `privacy` необходимо чтобы uBlock отключил функцию "Использовать подсказки для ускорения загрузки страниц" (англ. "Prefetch resources to load pages more quickly"). Это полностью предотвращает установление соединения для всех заблокированных запросов, защищая Вашу приватность.
 
-This is Privacy Badger required permissions:
+Вот перечень разрешений необходимых для работы Privacy Badger:
 
     "permissions": [
         "contextMenus",
@@ -35,14 +38,14 @@ This is Privacy Badger required permissions:
         "https://*/*"
     ],
 
-### "Access your data on all web sites"
+### "Просмотр и изменение ваших данных на посещаемых сайтах" (англ. "Access your data on all web sites")
 
-Since [first version](https://github.com/gorhill/uBlock/blob/b5fdac90539b19a0db8f36ea537bd150edb4d9c8/manifest.json).
+Это разрешение требовалось ещё в [начальной версии](https://github.com/gorhill/uBlock/blob/b5fdac90539b19a0db8f36ea537bd150edb4d9c8/manifest.json).
 
-- To be able to inspect all net requests so that they can be cancelled if needed.
-    - Only on http- and https-based URL addresses.
+- Необходимо для проверки всех сетевых запросов чтобы преривать их в случае необходимости.
+    - Только для http и https- сетевых адресов.
 
-See code:
+Смотрите код:
 
 - [chrome.webRequest](https://github.com/gorhill/uBlock/search?q=%22chrome.webRequest%22&type=Code)
 
