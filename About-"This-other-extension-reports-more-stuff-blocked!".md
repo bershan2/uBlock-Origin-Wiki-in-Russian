@@ -1,12 +1,15 @@
-TL;DR: Do **not** rely on the number shown over an extension badge to judge blocking power, i.e. to assess how well your privacy is protected, you could fool yourself big time.
+# Об "А другое расширение говорит что заблокировало больше!"
+Оригинал [_About "This other extension reports more stuff blocked!"_](https://github.com/gorhill/uBlock/wiki/About-"This-other-extension-reports-more-stuff-blocked%21") от 9 мар. 2016 переведён 9 апр. 2017.
+
+Кратко: **Не** стоит полагаться на счётчик на значке расширения при оценке эффективности фильтра, т.е. насколько хороша защита Вашей конфиденциальности, Вы можете сильно ошибиться.
 
 ***
 
-For both Adblock Plus and uBlock (and many other such extensions), the badge on the icon reports the number of net requests blocked by the extension.
+Оба Adblock Plus и uBlock (а также многие подобные расширения) показывают на своей иконке количество заблокированных ими сетевых запросов.
 
-Sometimes, for the same page, one extension can report more stuff blocked than the other, while the reality could be the opposite.
+Иногда на одной и той же странице одно расширение может показывать большее число чем другое, при этом блокируя меньше.
 
-The less a blocker blocks, the higher the number of network requests. The higher the number of network requests, the more likely some of them will need to be blocked. So sometimes you end up with more network requests blocked as shown by the badge, while internally more network requests were actually allowed for the web page.
+Чем меньше блокировщик блокирует, тем больше будет совершено сетевых запросов. Чем больше сетевых запросов, тем вероятнее что некоторые из них нужно будет заблокировать. Поэтому иногда счетчик на иконке расширения может показывать больше заблокированных сетевых запросов, на самом деле пропустив больше запросов.
 
 Ultimately, for me it's the [benchmarks I run](/gorhill/uBlock/wiki/%C2%B5Block-vs.-others:-Blocking-ads,-trackers,-malwares) to report blocking power which tells the real story. The badge is really not a good way to assess blocking power of an extension, you could well end up concluding the opposite of what is really happening.
 
@@ -18,7 +21,7 @@ For example, for the front page of <http://www.cnet.com/>, **uBlock shows 10 req
 
 Remote servers reached:
 
-Adblock Plus
+Adblock Plus:
 - dw.cbsi.com
 - cnet3.cbsistatic.com
 - cnet4.cbsistatic.com
@@ -41,8 +44,8 @@ uBlock:
 - urs.cnet.com
 - www.cnet.com
 
-So uBlock caused the browser to hit many less remote servers, meaning it blocked more, and yet its badge displayed a lower number of requests blocked.
+Таким образом, uBlock позволил подключение к меньшему количеству внешних серверов, то есть заблокировал больше, но все равно счетчик на его значке показал меньшее число заблокированных запросов.
 
-So the point is, do not rely on the badge to judge blocking power, i.e. to assess how well your privacy is protected, you would fool yourself big time.
+Поэтому не стоит полагаться на счётчик на значке расширения при оценке эффективности фильтра, т.е. насколько хороша защита Вашей конфиденциальности, Вы можете сильно ошибиться.
 
-On the other hand, blocking too much may "break" some aspects of a web site, so in the end, as long as you understand what is really happening under the hood, you can make informed choices.
+С другой стороны, чрезмерное блокирование может "поломать" отдельные компоненты сайта. В конце концов, попытайтесь разобраться что на самом деле происходит за кадром, и Вы всегда сможете сделать правильный выбор.
