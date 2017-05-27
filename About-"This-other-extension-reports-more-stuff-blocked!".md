@@ -1,5 +1,5 @@
 # Об "А другое расширение говорит что заблокировало больше!"
-Оригинал [_About "This other extension reports more stuff blocked!"_](https://github.com/gorhill/uBlock/wiki/About-"This-other-extension-reports-more-stuff-blocked%21") от 9 мар. 2016 переведён 9 апр. 2017.
+Оригинал [_About "This other extension reports more stuff blocked!"_](https://github.com/gorhill/uBlock/wiki/About-"This-other-extension-reports-more-stuff-blocked%21") от 9 мар. 2016.
 
 Кратко: **Не** стоит полагаться на счётчик на значке расширения при оценке эффективности фильтра, т.е. насколько хороша защита Вашей конфиденциальности, Вы можете сильно ошибиться.
 
@@ -11,15 +11,15 @@
 
 Чем меньше блокировщик блокирует, тем больше будет совершено сетевых запросов. Чем больше сетевых запросов, тем вероятнее что некоторые из них нужно будет заблокировать. Поэтому иногда счетчик на иконке расширения может показывать больше заблокированных сетевых запросов, на самом деле пропустив больше запросов.
 
-Ultimately, for me it's the [benchmarks I run](/gorhill/uBlock/wiki/%C2%B5Block-vs.-others:-Blocking-ads,-trackers,-malwares) to report blocking power which tells the real story. The badge is really not a good way to assess blocking power of an extension, you could well end up concluding the opposite of what is really happening.
+Поетому я пологаюсь на [тесты](/gorhill/uBlock/wiki/%C2%B5Block-vs.-others:-Blocking-ads,-trackers,-malwares) при оценке надежности блокировки. Счетчик на значке раширения менее точен в подобной ситуации, доверившисъ ему Вы вполне можете прийти к заключениям не соответствующим действительности.
 
-If you don't want to run a benchmark, I have this [little online tool](http://raymondhill.net/httpsb/har-parser.html) with which you can find out the requests which were **not** prevented from leaving your browser. To use it, open the dev console for the page for which you want a report, and go to the _Network_ tab.
+Если Вы не желаете проводить тесты, то у меня есть [маленькое онлайн-приложение](http://raymondhill.net/httpsb/har-parser.html) позволяющее отследить запросы которые **не** были предотвращены. Чтобы им воспользоваться, откройте _Консоль Разработчка_ (_Developer Console_) для страницы Вы исследуете и перейдите на вкладку _Сеть_ (_Network_).
 
-Clear the browser cache by right-clicking somewhere in the _Network_ tab console. Force a reload of the web page, then right-click in the _Network_ tab console, and select _"Copy all as HAR"_. Then paste the result in the text area of [this online tool](http://raymondhill.net/httpsb/har-parser.html), and click _Parse_. You will be shown the hostnames which were hit by the browser for the particular page you loaded.
+Очистите кэш нажатием правой кнопки мыши где-нибудь во вкладке консоли _Сеть_ (_Network_). Перезагрузите исследуемую страницу, затем нажмите правую кнопку мыши во вкладке консоли _Сеть_ (_Network_), и выберите _"Копировать всё как HAR"_. Затем вставьте содержимое в текстовое поле этого [онлайн-приложения](http://raymondhill.net/httpsb/har-parser.html), и нажмите _Parse_. Вы увидите доменные имена к которым подключилась исседуемая страница.
 
-For example, for the front page of <http://www.cnet.com/>, **uBlock shows 10 request blocked**, while **ABP shows 16 request blocked** (both with a lot of filter lists). However here is what really happened internally:
+Например, на главной странице <http://www.cnet.com/>, **uBlock показывает 10 заблокированных запросов**, а **ABP показывает 16** (оба использовали большое количество фильтров). Давайте посмотрим что происходит "под капотом":
 
-Remote servers reached:
+Подключение сервера:
 
 Adblock Plus:
 - dw.cbsi.com
@@ -44,7 +44,7 @@ uBlock:
 - urs.cnet.com
 - www.cnet.com
 
-Таким образом, uBlock позволил подключение к меньшему количеству внешних серверов, то есть заблокировал больше, но все равно счетчик на его значке показал меньшее число заблокированных запросов.
+Таким образом, uBlock позволил подключение к меньшему количеству внешних серверов, то есть заблокировал больше, но всё равно счетчик на его значке показал меньшее число заблокированных запросов.
 
 Поэтому не стоит полагаться на счётчик на значке расширения при оценке эффективности фильтра, т.е. насколько хороша защита Вашей конфиденциальности, Вы можете сильно ошибиться.
 
