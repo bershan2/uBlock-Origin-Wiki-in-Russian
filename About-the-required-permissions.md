@@ -1,5 +1,5 @@
 # О необходимых разрешениях в Chromium
-Оригинал [_About the required permissions_](https://github.com/gorhill/uBlock/wiki/About-the-required-permissions) от 8 июня 2015 переведён 9 апр. 2017.
+Перевод на русский язык оригинала [_About the required permissions_](https://github.com/gorhill/uBlock/wiki/About-the-required-permissions) от 8 июня 2015.
 
 ### Необходимые разрешения (в Chromium) для работы uBlock
 
@@ -42,49 +42,49 @@ uBlock требует такие-же разрешения что и [Privacy Ba
 
 Это разрешение требовалось ещё в [начальной версии](https://github.com/gorhill/uBlock/blob/b5fdac90539b19a0db8f36ea537bd150edb4d9c8/manifest.json).
 
-- Необходимо для проверки всех сетевых запросов чтобы преривать их в случае необходимости.
+- Необходимо для проверки всех сетевых запросов чтобы прерывать их в случае необходимости.
     - Только для http и https- сетевых адресов.
 
 Смотрите код:
 
 - [chrome.webRequest](https://github.com/gorhill/uBlock/search?q=%22chrome.webRequest%22&type=Code)
 
-### "Access your tabs and browsing activity"
+###  (англ. "Access your tabs and browsing activity")
 
-Since [first version](https://github.com/gorhill/uBlock/blob/b5fdac90539b19a0db8f36ea537bd150edb4d9c8/manifest.json).
+Требуется начиная с [первой версии](https://github.com/gorhill/uBlock/blob/b5fdac90539b19a0db8f36ea537bd150edb4d9c8/manifest.json).
 
-This is necessary to be able to:
+Это разрешение необходимо чтобы:
 
-- Create new tabs (when you click on a filter list, to see its content)
-- To detect when a tab is added or removed:
-- To update badge
-- To flush from memory internal data structures
-- To find out which tab is currently active (to fill popup menu with associated stats/settings)
-- To be able to inject the element picker script
-- To implement the popup-blocker
+- Открывать новые вкладки (при нажатии на название списка фильтров чтобы показывать их содержимое)
+- Обнаруживать добавление и закрытие вкладок
+- Обновлять значок
+- Очищать память от устаревших внутренних структур данных
+- Знать, какая вкладка активна в настоящий момент (чтобы вставлять во всплывающее меню соответствующие статистику и/или настройки)
+- Вставлять скрипт инструмента выбора элементов
+- Блокировать всплывающие окна
 
-See code:
+См. исходный код:
 
 - [chrome.tabs](https://github.com/gorhill/uBlock/search?q=%22chrome.tabs%22&type=Code)
 - [chrome.webNavigation](https://github.com/gorhill/uBlock/search?q=%22chrome.webNavigation%22&type=Code)
 
-### "Change your privacy-related settings"
+### (англ. "Change your privacy-related settings")
 
-Since [version 0.9.8.2](https://github.com/gorhill/uBlock/commit/e65c2939757f09db646d277b82da8690aaf3adbc) ([release notes](https://github.com/gorhill/uBlock/releases/tag/0.9.8.2)).
+Требуется начиная с [версии 0.9.8.2](https://github.com/gorhill/uBlock/commit/e65c2939757f09db646d277b82da8690aaf3adbc) ([лог измнений](https://github.com/gorhill/uBlock/releases/tag/0.9.8.2)).
 
-This is necessary to be able to:
+Это разрешение необходимо чтобы:
 
-- Disable _"Prefetch resources to load pages more quickly"_
-    - This will ensure no TCP connection is opened **at all** for blocked requests: **It's for your own protection privacy-wise.**<sup>[1]</sup>
-    - For pages with lots for blocked requests, this will actually remove overhead from page load (if you did not have the setting already disabled).
+- Отключить (англ. _"Prefetch resources to load pages more quickly"_)
+    - Это **полностью** предотвращает установление TCP соединения  для заблокированных запросов: **Эта настройка засчищает Вашу конфиденциальность.**<sup>[1]</sup>
+    - На страницах с большим количеством заблокированных запросов эта настройка даже уменьшает нагрузку при загрузке страницы (если у вас еще не установлен этот параметр).
     - When uBlock blocks a network request, the expectation is that it blocks **completely** the connection, hence the new permission is necessary for uBlock to do **truthfully** what it says it does.
-- Disable [hyperlink auditing/beacon](http://www.wilderssecurity.com/threads/hyperlink-auditing-aka-a-ping-and-beacon-aka-navigator-sendbeacon.364904/) (0.9.8.5)
+- Отключить [hyperlink auditing/beacon](http://www.wilderssecurity.com/threads/hyperlink-auditing-aka-a-ping-and-beacon-aka-navigator-sendbeacon.364904/) (0.9.8.5)
 
-uBlock's primary purpose is to block **network connections**, not just data transfer. Not blocking the connection while just blocking the data transfer would mean uBlock is lying to users. So this permission will stay, and sorry for those who do not understand that it actually allows uBlock to do its intended job more thoroughly<sup>[2]</sup>. A blocker which does not thoroughly prevent connections is not a real blocker.
+Основная задача uBlock -- это блокировать **сетевые соединения**, а не только передачу данных. В противном случае, не предотвращая соединение, а только передачу данных, uBlock вводил бы в заблухдение пользователей. Поэтому это разрешение будет необходимо и в будущем, хотя мне (автору, Raymond Hill -- прим. переводчика) и жаль тех кто не понимает что оно позволяет uBlock лучше выполняться свою функцию<sup>[2]</sup>. Блокировщик, не способный полностью предотвратить установление соединения, не выполняет свою основную функцию.
 
-**Privacy Badger also requires exactly the same permissions.** I want uBlock to also serve privacy-minded users first.
+**Privacy Badger также запрашиевает эти же разрешения.** Я (Raymond Hill -- прим. переводчика) хочу чтобы uBlock помогал пользователям заботящимся о приватности в первую очередь.
 
-If _prefetching_ had been disabled by default, this new permission would not be needed, but _prefetching_ is unfortunately enabled by default, and under _Privacy_ heading, which is itself hidden by default under _"advanced settings"_, and even at this point, you would still have to dig to find out the [negative side effects of prefetching](https://wikipedia.org/wiki/Link_prefetching#Issues_and_criticisms) (related: [dark patterns](http://darkpatterns.org/)).
+Если (англ. _prefetching_)  had been disabled by default, this new permission would not be needed, but _prefetching_ is unfortunately enabled by default, and under _Privacy_ heading, which is itself hidden by default under _"advanced settings"_, and even at this point, you would still have to dig to find out the [negative side effects of prefetching](https://wikipedia.org/wiki/Link_prefetching#Issues_and_criticisms) (related: [dark patterns](https://darkpatterns.org/)).
 
 ![c](https://cloud.githubusercontent.com/assets/585534/7914528/924b9314-0845-11e5-8012-f67e4b1814cd.png)
 
@@ -98,7 +98,7 @@ See code:
 
 - [chrome.privacy.network](https://github.com/gorhill/uBlock/commit/e65c2939757f09db646d277b82da8690aaf3adbc)
 
-<sub>[1] Merely opening a TCP connection leaks your IP address to the remote server -- this is incompatible with an extension which primary purpose is to **completely** prevent connections to remove server, not just merely prevent the transfer of data. For instance, [see what can be found](https://www.browserleaks.com/whois) with a just that connection being established (IP, OS Fingerprinting, IP Address Location).</sub>
+<sub>[1] Само по себе установление TCP соединения риводит к утечке Вашего IP аддресса на удаленный сервер -- это неприемлемо this is incompatible with an extension which primary purpose is to **completely** prevent connections to remove server, not just merely prevent the transfer of data. For instance, [see what can be found](https://www.browserleaks.com/whois) with a just that connection being established (IP, OS Fingerprinting, IP Address Location).</sub>
 
 <sub>[2] In version 0.9.8.3, there will be [a setting to allow re-enabling prefetching](https://github.com/gorhill/uBlock/issues/274), default will still be  to disable it though.
 </sub>
