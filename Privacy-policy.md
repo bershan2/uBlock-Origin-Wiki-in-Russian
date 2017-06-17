@@ -1,10 +1,13 @@
-uBlock Origin does not collect any data of any kind.
+# Политика конфиденциальности
+Перевод на русский язык оригинала [_Privacy policy_](https://github.com/gorhill/uBlock/wiki/Privacy-policy) от 26 апреля 2017.
 
-- uBlock Origin has no home server.
-- uBlock Origin doesn't embed any kind of analytic hooks in its code.
+uBlock Origin не собирает никакую информацию вообще.
 
-The only time uBlock Origin connects to a remote server is to update the filter lists and other related assets. If you disable auto-update in the _"3rd-party filters"_ pane in the dashboard, uBlock Origin will not connect to any remote server, unless you click _"Update now"_ and only if there are assets deemed "out of date".
+- uBlock Origin не имеет собственного сервера.
+- uBlock Origin не содержит никаких аналитических крючков в коде.
 
-The project is currently hosted on `github.com`, which is owned by GitHub, Inc., and thus is unrelated to uBlock Origin.
+uBlock Origin может соединятьса с удаленными серверами только чтобы обновить списки фильтров и прочие относящиеся к ним ресурсы. Если Вы отключите "Автообновление списков фильтров" на вкладке Панели управления _"Сторонние фильтры"_, uBlock Origin не будет подключаться к удаленным серверам вообще, кроме случаев когда Вы сами нажмете _"Обновить сейчас"_ и только если какие-либо ресурсы считаются "устаревшими."
 
-That is all.
+Проект в настоящее время размещен на `github.com`, принадлежащий GitHub, Inc., и не имеющий никакого отношения к uBlock Origin.
+
+Вот и всё.
