@@ -1,33 +1,36 @@
-After I added the `privacy` permission in order to make uBlock Origin  reliable when it comes to blocking network requests, a lot of people questioned uBlock Origin's trustworthiness.
+# Можно ли доверять uBlock?
+Перевод на русский язык оригинала [_Can you trust uBlock?_](https://github.com/gorhill/uBlock/wiki/Can-you-trust-uBlock%3F) от 19 июня 2015.
 
-First, uBlock Origin is completely developed in full public view. All the sources and all the changes to the sources are fully accessible on GitHub.
+Добавление разрешения `privacy`, необходимого чтобы uBlock Origin мог надежно блокировать сетевые соединения, вызвало много вопросов о благонадежности uBlock Origin.
 
-Second, uBlock Origin does not have a dedicated server, it can't "phone home" with your browsing data, there is only GitHub, and GitHub is completely unrelated to uBlock Origin.
+Во первых, uBlock Origin полностью разрабатывается у всех на виду. Весь исходный код и все изменения полностью доступны на GitHub.
 
-Third, I have no intent to _ever_ monetize uBlock Origin, it's started as a personal project, and it still is a personal project. So uBlock Origin has absolutely no interest in data mining you.
+Во вторых, uBlock Origin не имеет собственного сервера, поэтому он не может "отправлять весточку домой" содержащую Вашу личную информацию; uBlock Origin полагается только на GitHub, который никаким образом не связан с uBlock Origin.
 
-I think it's time I give examples of how requiring _less_ permissions is **not** a sure sign a higher trustworthiness.
+В третьих, я (Raymond Hill, автор -- прим. переводчика) _никогда_ не планирую коммерциализировать uBlock Origin: он начался как личный проект и таковым остался. Таким образом, uBlock Origin не интересует Ваша личная информация.
+
+Давайте посмотрим на несколько примеров того что запрос _меньшего_ количества разрешений **не** является знаком точным критерием для большего доверия.
 
 #### Web Protector - Reliable Phishing Protection
 
-Chrome store: [Web Protector - Reliable Phishing Protection](https://chrome.google.com/webstore/detail/web-protector-reliable-ph/kfecnpmgnlnbmipaogfhoacoioifjgko).
+В магазине расширений Chrome: [Web Protector - Reliable Phishing Protection](https://chrome.google.com/webstore/detail/web-protector-reliable-ph/kfecnpmgnlnbmipaogfhoacoioifjgko).
 
-This extension requires the same permission as uBlock, _minus_ the `privacy` one. Some might be inclined that it can thus be more trusted than uBlock, which requires the `privacy` permission.
+Это расширение запрашивает такие же разрешения как и uBlock, _кроме_ разрешения `privacy`. Некоторые могут подумать, что поэтому оно более благонадежно чем uBlock, которому необходимо разрешение `privacy`.
 
-However, Web Protector has a home server, and it does "phone home" as opposed to uBlock (which has no home in the first place).
+Однако, у Web Protector есть собственный сервер, и оно "отправлять весточку домой" в отличие от uBlock (у которого нет собственного сервера вообще).
 
-For **every** web page you visit, you can see Web Protector sending behind-the-scene network requests to `webovernet.com`:
+**Каждый** раз когда Вы посещаете страницу, Web Protector совершает скрытый запрос к `webovernet.com`:
 
 ![c](https://cloud.githubusercontent.com/assets/585534/8253895/fe92dd8c-1661-11e5-9134-5c2b9159a57c.png)
 
 ***
 
-This is just to demonstrate that the permissions _alone_ do not tell the whole story. What must be assessed are:
+Это всего лишь показывает что разрешения _сами по себе_ не раскрывают полной картины. Таке проверьте следующие факторы:
 
-- Is the code developed in **full** view?
-- Under which licensed the code fall?
-- Is there a home server?
-- What network requests are made by an extension behind the scene?
-    - uBlock Origin's logger allows you to see all behind-the-scene network requests, including its own (to GitHub, for updating filter lists).
-- How is an extension monetizing itself?
-    - To best understand how its interests are aligned or at odd with yours.
+- Был ли код разработан **полностью** у всех на виду?
+- Под какой лицензией распространяется исходный код?
+- Эсть ли у приложения собственный сервер?
+- Какие скрытые сетевые запросы делает расширение?
+    - Лог запросов uBlock Origin показывает все скрытые сетевые запросы, включая свои собственные (к GitHub, чтобы обновить списки фильтров).
+- Каким образом раширение монетезировано?
+    - Это позволяет понять насколько его интересы совпадают с Вашими.
