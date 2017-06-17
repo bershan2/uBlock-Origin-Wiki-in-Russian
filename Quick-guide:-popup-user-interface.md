@@ -1,100 +1,101 @@
-[Back to Wiki home](https://github.com/gorhill/uBlock/wiki)
+# Краткое руководство по всплывающему пользовательскому интерфейсу
+Перевод на русский язык оригинала [_Quick guide: popup user interface_](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface) от 5 июня 2017.
 
 ***
 
-- [The title bar](#the-title-bar)
-- [The large power button](#the-large-power-button)
-- [The number of requests blocked](#the-number-of-requests-blocked)
-- [The tools](#the-tools)
-- [The number of domains connected](#the-number-of-domains-connected)
-- [The per-site switches](#the-per-site-switches)
+- [Заголовок](#Заголовок)
+- [Большая кнопка включить](#Большая-кнопка-включить)
+- [Счётчик заблокированных запросов](#Счётчик-заблокированных-запросов)
+- [Инструменты](#Инструменты)
+- [Счётчик подключённых доменов](#Счётчик-подключённых-доменов)
+- [Индивидуальные переключатели для каждого сайта](#Индивидуальные-переключатели-для-каждого-сайта)
 
 ***
 
-This is uBlock's popup UI when you click on uBlock's icon in the toolbar:
+Вот так выглядит всплывающий интерфейс когда Вы нажимаете иконку uBlock на панели инструментов::
 
 ![Popup UI](https://cloud.githubusercontent.com/assets/585534/26748913/b0de57b8-47d0-11e7-8d8a-f862bf5aa84f.png)
 
 ***
 
-#### The title bar
+#### Заголовок
 
 ![Popup UI](https://cloud.githubusercontent.com/assets/585534/26748961/439dd57e-47d1-11e7-8579-1e5c008ee938.png)
 
-Click the title bar of the popup to go to uBlock's dashboard.
+Щелкните на заголовке всплывающего окна, чтобы перейти на панель инструментов uBlock.
 
 ***
 
-#### The large power button
+#### Большая кнопка включить
 
 ![Popup UI](https://cloud.githubusercontent.com/assets/585534/26748994/858a70aa-47d1-11e7-9e2c-409b83de99b9.png)
 
-Click the large power button to turn off uBlock **for the current site** (a.k.a. _whitelist_ the current site). This will be remembered the next time you visit the site.
+Нажмите на большую кнопку включения чтобы отключить uBlock **на сайте на котором Вы находитесь** (т.е. занести данный сайт в _белый список_). Эта настройка будет сохранена в следующий раз когда Вы посетите этот сайт.
 
-Alternatively, you can also <kbd>Ctrl</kbd>-click to turn off uBlock only for the current page (<kbd>command ⌘</kbd>-click on Mac).
+Также Вы можете отключить uBlock на конкретной странице сайта нажатием <kbd>Ctrl</kbd>-клик (<kbd>command ⌘</kbd>-клик на Mac).
 
-For more advanced whitelisting control, see ["How to whitelist a web site"](https://github.com/gorhill/uBlock/wiki/How-to-whitelist-a-web-site).
+Более продвинутые способы добавлении в белый список описаны в статье ["Как добавить веб-сайт в Белый список"](./How-to-whitelist-a-web-site.md).
 
 ***
 
-#### The tools
+#### Инструменты
 
 ![a](https://cloud.githubusercontent.com/assets/585534/26748901/97dc024c-47d0-11e7-89d0-63fd5a092b02.png)
 
-#### Zap an element on the current page
+#### Скрыть элемент на данной странице
 
-Click the _flash_ icon to enter [element zapper mode](https://github.com/gorhill/uBlock/wiki/Element-zapper), which allows you to interactively remove one or more elements on the current page. Removing an element is always temporary, i.e. the removed elements will be back when the page is reloaded.
+Нажмите на значок _молнии_ чтобы войти в [режим затирания элементов](./Element-zapper.md), позволяющий интерактивно убрать один или несколько элементов на данной странице. Элемент затираетса временно,  т.е. убранные элементы появятся обратно просле перезагрузки страницы.
 
-#### Create a filter for the current site
+#### Создать фильтр для данного сайта
 
-Click the _eye-dropper_ icon to enter [element picker mode](https://github.com/gorhill/uBlock/wiki/Element-picker), which allows you to create a filter by interactively picking an element on a page, thus permanently removing it from the page.
+Нажмите на иконку _пипетки_ чтобы войти в [режим выбора элемента](./Element-picker.md), позволяющий создать новый фильтр интерактивно выбрав элемент на странице, таким образом thus перманентно убирая его со страницы.
 
-#### Open the logger
+#### Открыть лог сетевых запросов
 
-Click the _list_ icon to open the [logger](https://github.com/gorhill/uBlock/wiki/The-logger) in a separate tab. This allows you to inspect real-time network traffic within the browser.
+Нажмите на иконку _списка_ чтобы открыть [лог сетевых запросов](./The-logger.md) в новой вкладке. Этот лог показывает все сетевые запросы созданные браузером в режиме реального времени.
 
-Tip: press the <kbd>Shift</kbd> key while clicking the icon to toggle between opening the logger in a separate window or separate tab. uBO will remember that setting when you open the logger without the <kbd>Shift</kbd> key.
+Подсказка: зажмите кнопку <kbd>Shift</kbd> при нажатии на иконке чтобы переключиться между открытием лога в новом окне или новой вкладке. uBO запомнит эту настройку при следующем нажатии кнопки без зажимания кнопки <kbd>Shift</kbd>.
 
 ***
 
-#### The number of requests blocked
+#### Счётчик заблокированных запросов
 
 ![Popup UI](https://cloud.githubusercontent.com/assets/585534/26749010/ba071586-47d1-11e7-8bc6-74bce249d497.png)
 
-This shows the number of network requests uBlock blocked on the current page. Also, less useful (but people like this kind of thing), the number of network requests uBlock blocked since you installed it. The percentage figure tells you how many requests were blocked out of all the requests made.
+Этот счетчик отображает количество сетевых запросов от данной вкладки заблокированных uBlock. Также показывается количество сетевых запросов uBlock заблокировал с момента установки, что менее информативно (но пользователей иногда интересует это число). Процент показывает пропорцию заблокированных запросов от суммарного количества запросов.
 
 ***
 
-#### The number of domains connected
+#### Счётчик подключённых доменов
 
 ![Popup UI](https://cloud.githubusercontent.com/assets/585534/26749020/da09c446-47d1-11e7-9d49-e46634058915.png)
 
-The number of **distinct** domains with which a network connection was established, out of all connections (established + blocked). The domains are derived using the official [Public Suffix List](https://publicsuffix.org/).
+Этот счетчик отображает количество **уникальных** доменов, с которыми было установлено сетевое соединение, а также всех запросов (подключенных и заблокированних). Домены определяются с помощью официального [Списка Публичных Суффиксов (англ. Public Suffix List)](https://publicsuffix.org/).
 
-In general, it must be assumed that each distinct domain is managed by a distinct administrative authority. In practice, it is not uncommon to have a multiple distinct domains which are under the same administrative authority (example 1: `google.com`, `ajax.googleapis.com` and `gstatic.com`, example 2: `wikipedia.org` and `wikimedia.org`).
+В общем случае, стоит считать что каждый домен обслуживается отдельным административным органом. Но на практике нередко несколько разных доменов управляются одним административным органом (например, `google.com`,` ajax.googleapis.com` и `gstatic.com`; или например, `wikipedia.org` и `wikimedia.org`).
 
-That said, this statistic may be seen this way: the more distinct domains your browser connects to, the greater the privacy exposure.
+Тем не менее, можно энтерпретировать эту статистику следующим образом: чем большему количеству уникальных доменов Ваш браузер подключён, тем большим угрозам подвержена Ваша конфиденциальность.
 
-In a best-case scenario, the number of distinct domains to which a web page connects should be **only one**:  that of the remote server from which the web page was fetched.
+В лучшем, случае веб-страница должна подключаться **только к одному** домену, соответствующему удаленному серверу, с которого была загружена сама веб-страница.
 
-**The higher the number, the higher you are exposing yourself privacy-wise.**
+**Чем выше число, тем большему риску Вы подвергаете свою конфиденциальность.**
 
-There is a good correlation between the _domains connected_ count and: unneeded page bloat, high privacy exposure, increased likelihood of being the target of data mining.
+Существует значиельная корреляция между счётчиком _подключённых доменов_ и следующими факторами: количеством бесполезного балласта на странице, высокой угрозой конфиденциальности, повышенной вероятностью стать быть целью интеллектуального анализа данных (англ. data mining).
 
-Example: the web page on <http://www.ibtimes.com/> (which can be read fine in all cases, by the way):
+Например, давайте рассмотрим страницу <http://www.ibtimes.com/> (которая корректно отображается во всех описанных случаях):
 
- uBlock's mode | turned off | default settings | [default-deny](https://github.com/gorhill/uBlock/wiki/Blocking-mode:-medium-mode)
+ uBlock's mode | Выключен | Настройки по умолчанию | [Блокировать по умолчанию](./Blocking-mode:-medium-mode)
 --- | --- | --- | ---
-domains connected | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1e.png) | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1d.png) | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1f.png)
-privacy exposure | very high | medium | very low
-bloat | ridiculously high | medium | very low
+Доменов подключено | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1e.png) | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1d.png) | ![](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1f.png)
+Угроза конфиденциальности | Очень высокая | Средняя | Очень низкая
+Баласта | Невероятно много | Среднее | Очень мало
 
-And I had click-to-play enabled in all cases, so it could have been worse (except for default-deny)...
+К томуже, функция нажмите-для-проигрывания (англ. click-to-play) была включена во всех случаях, поэтому всё могло бы быть значительно хуже (кроме Блокировать по умолчанию)...
 
 ***
 
-#### The per-site switches
+#### Индивидуальные переключатели для каждого сайта
 
 ![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1g.png)
 
-The per-site switches allow you to control some settings on a per-site basis. See [detailed documentation about per-site switches](https://github.com/gorhill/uBlock/wiki/Per-site-switches).
+Индивидуальные переключатели позволяют менять некоторые настройки на каждом сайте отдельно. Эти функции подробно описаны в статье [Индивидуальные переключатели для каждого сайта](./Per-site-switches.md).
