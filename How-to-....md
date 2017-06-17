@@ -1,3 +1,6 @@
-I will to post small, quick tips about how to best use uBlock Origin.
+# Краткие руководства
+Перевод на русский язык оригинала [_How to..._] от 10 октября 2015.
 
-- [How to remove "Switch your default ... to Google"](https://youtu.be/8TvCGWwQr5o)
+Здесь будут собраны короткие подсказки о том как использовать uBlock Origin наиболее эффективно.
+
+- [Как убрать "Сделать Google основным поисковиком"(англ. "Switch your default ... to Google")](https://youtu.be/8TvCGWwQr5o)
