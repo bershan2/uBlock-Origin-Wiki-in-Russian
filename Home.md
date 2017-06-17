@@ -2,14 +2,14 @@
 - [Оригинал на английском языке](https://github.com/gorhill/uBlock/wiki) 
 - [Китайский перевод этой Wiki: 中文](https://github.com/fang5566/uBlock/wiki/Home)
 - [Лог изменений (на английском языке)](https://github.com/gorhill/uBlock/releases) / [Версии от 0.9.3.0 до 0.2.0.0](https://github.com/chrisaljoudi/uBlock/releases) / [Версии ранее 0.1.4.8](https://github.com/gorhill/uBlock/wiki/Change-log)
-- [О необходимых разрешениях в Chromium](./About-the-required-permissions.md) **(не переведено)**
-    - [Можно ли доверять uBlock?](./Can-you-trust-uBlock%3F.md) **(не переведено)**
-- [Политика конфиденциальности](./Privacy-policy.md) **(не переведено)**
-- [Руководства по ...](./How-to-....md) **(не переведено)**
+- [О необходимых разрешениях в Chromium](./About-the-required-permissions.md) **(not proof-read)**
+    - [Можно ли доверять uBlock?](./Can-you-trust-uBlock%3F.md) **(not proof-read)**
+- [Политика конфиденциальности](./Privacy-policy.md)
+- [Руководства по ...](./How-to-....md) **(What's the difference between "How to" and "Quick guides"?)**
 - Краткие руководства:
-    - [Всплывающий пользовательский интерфейс](./Quick-guide:-popup-user-interface.md) **(не переведено)**
+    - [Всплывающий пользовательский интерфейс](./Quick-guide:-popup-user-interface.md) **(not proof-read)**
         - [Переключатели для каждого сайта](./Per-site-switches.md) **(не переведено)**
-    - [Панель управления](./Dashboard.md) **(не переведено)**
+    - [Панель управления](./Dashboard.md) **(not proof-read)**
         - Вкладка [_Настройки_](./Dashboard:-Settings.md) **(не переведено)**
         - Вкладка [_Сторонние фильтры_](./Dashboard:-3rd-party-filters.md) **(не переведено)**
             - [Списки Фильтров со всего Интернета](./Filter-lists-from-around-the-web.md) **(не переведено)**
@@ -63,6 +63,6 @@
     - [Миф: uBlock потребляет не значительно меньше ресурсов чем Adblock Plus](./Myth:-uBlock-is-just-slightly-less-resource-intensive-than-Adblock-Plus.md) **(не переведено)**
     - [Counterpoints: unsorted](./Counterarguments.md) **(не переведено)**
     - [Сравнение uBlock с другими раширениями: Блокировка рекламы, маячков, и вредоносного ПО](./uBlock-and-others:-Blocking-ads,-trackers,-malwares.md) **(не переведено)**
-    - [Об "А другое расширение говорит что заблокировало больше!"](./About-%22This-other-extension-reports-more-stuff-blocked!%22.md) **(не переведено)**
-    - [Подборка видео-демонстраций разници в скорости загрузки сложных сайтов](./Various-videos-showing-side-by-side-comparison-of-the-load-speed-of-complex-sites.md) **(не переведено)**
+    - [Об "А другое расширение говорит что заблокировало больше!"](./About-%22This-other-extension-reports-more-stuff-blocked!%22.md) **(not proof-read)**
+    - [Подборка видео-демонстраций разници в скорости загрузки сложных сайтов](./Various-videos-showing-side-by-side-comparison-of-the-load-speed-of-complex-sites.md) **(not proof-read)**
 - [Почему автор не принимает пожертвования?](./Why-don't-you-accept-donations%3F.md)
