@@ -29,6 +29,7 @@
         - [Hard mode](./Blocking-mode:-hard-mode) **(не переведено)**
         - [Nightmare mode](./Blocking-mode:-nightmare-mode) **(не переведено)**
     - [Element picker](./Element-picker) **(не переведено)**
+    - [Element zapper](./Element-zapper) **(не переведено)**
     - [Strict blocking](./Strict-blocking) **(не переведено)**
         - [Badware risks](./Badware-risks) **(не переведено)**
     - [Журнал сетевых запросов](./The-logger) **(не переведено)**
