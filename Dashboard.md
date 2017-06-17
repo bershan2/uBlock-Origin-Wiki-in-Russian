@@ -1,12 +1,11 @@
-[Back to Wiki home](https://github.com/gorhill/uBlock/wiki)
+# Панель управления
+Перевод на русский язык оригинала [_Dashboard_](https://github.com/gorhill/uBlock/wiki/Dashboard) от 24 декабря 2015.
 
-***
-
-You can access uBlock Origin's ("uBO") dashboard by ...
-- [Clicking the title bar](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-title-bar) of uBO's popup panel.
-- Chromium-based browsers:
-    - Clicking uBO's _Options_ link in the _Extensions_ page (`chrome://extensions/`); OR
-    - Right-clicking on uBO's icon in the toolbar and selecting _Options_ menu item; OR
-- Firefox-based browsers:
-    - Clicking uBO's _Preferences_ button in the `about:addons` page, then clicking the _"Show Dashboard"_ button at the bottom; OR
-    - Copy/paste `chrome://ublock0/content/dashboard.html` in the address bar.
+Вы можете открыть панель управления uBlock Origin (далее "uBO") следующими способами:
+- [Нажав на заголовок](https://github.com/gorhill/uBlock/wiki/Quick-guide:-popup-user-interface#the-title-bar) всплывающего пользовательского интерфейса uBO.
+- В браузерах основанных на Chromium:
+    - Нажав на _Настройки_ (англ. _Options_) под uBlock Origin на сранице _Раширения_ (англ. _Extensions_) (`chrome://extensions/`);
+    - Щелкнув на иконке uBO на панели инструментов и выбрав  _Настройки_ (англ. _Options_) в открывсемся меню.
+- В браузерах основанных на Firefox:
+    - Нажав на кнопку uBO _Настройки_ (англ. _Preferences_) на странице `about:addons`, а затем на кнопку _ (англ. _"Show Dashboard"_) внизу страницы;
+    - Перейдя на страницу `chrome://ublock0/content/dashboard.html`.
