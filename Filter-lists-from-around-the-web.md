@@ -1,9 +1,9 @@
-### Import external filter lists
+### Импортировать сторонние списки фильтров
 
-You can import external filter lists by pasting the URL address of a filter list into the text area below the _Custom_ entry in the _"3rd-party filters"_ in the dashboard:
+Вы можете добавить сторонние списки фильтров просто вставив их URL-аддресса в текстовое поле под заголовком _Пользовательские_ (англ. _Custom_) на вкладке _"Сторонние фильтры"_ (англ. _"3rd-party filters"_) на Панели управления:
 
 ![Custom filter lists](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/3rd-party-filters-custom.png)
 
 ### Resources
 
-See [FilterLists](https://filterlists.com/) for a comprehensive list of filter lists from all over the web (click the _Add_ link of a filter list to import that list into uBO).
+Сайт [FilterLists](https://filterlists.com) содержит полный перечень списков фильтров со всего Интернета (нажмите на ссылку _Add_ (_Добавить_) чтобы импортировать соответствующий список фильтров в uBlock Origin).
