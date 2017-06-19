@@ -1,35 +1,36 @@
-Back to [Wiki home](https://github.com/gorhill/uBlock/wiki)
+# Индивидуальные переключатели для каждого сайта
+Перевод на русский язык оригинала [_Per site switches_](https://github.com/gorhill/uBlock/wiki/Per-site-switches) от 12 апреля 2017.
 
 ***
 
-The per-site switches allows you to control uBlock's behavior on a per-site basis.
+Индивидуальные переключатели позволяют менять некоторые настройки на каждом сайте отдельно.
 
 ![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1g.png)
 
-- [No popups](#no-popups)
-- [No large media elements](#no-large-media-elements)
-- [No cosmetic filtering](#no-cosmetic-filtering)
-- [No remote fonts](#no-remote-fonts)
+- [Блокировка всплывающих окон](#Блокировка-всплывающих-окон)
+- [Блокировка больших медиа-элементов](#Блокировка-больших-медиа-элементов)
+- [Отключение косметических фильтров](#Отключение-косметических-фильтров)
+- [Блокировка сторонних шрифтов](#Блокировка-сторонних-шрифтов)
 
 ***
 
-## No popups
+## Блокировка всплывающих окон
 
-By default popups are allowed unless there is a filter to block them. When this setting is enabled, **all** popups will be unconditionally blocked for the current site, regardless of filters:
+По умолчанию всплывающие окна разрешены, если для их блокировки не существует фильтра. Но если этот параметр включен, независимо от фильтров **все** всплывающие окна будут безоговорочно заблокированы на конкретном сайте:
 
-![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1i.png)<br><sup>No popups for the current site: [Try it](http://jessehakanen.net/adblockpluspopupaddon/test.html)</sup>
+![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1i.png)<br><sup>Все всплывающие окна будут заблокированы: [Попробуйте сами.](http://jessehakanen.net/adblockpluspopupaddon/test.html)</sup>
 
-Blocking popups depends on whether the proper filters are present in the selected filter lists, so this feature is most useful when a site creates popups for which there are no filters to take care of them in 3rd-party filter lists.
+Блокировка всплывающих окон зависит от наличия соответствующих фильтров во включённых списках фильтров, поэтому эта функция наиболее полезна, если сайт создает всплывающие окна, для которых нет правил в сторонних списках фильтров.
 
-**Caveat for Chromium-based browsers:** Due to Chromium API limitations, it's not _always_ possible for uBlock Origin to determine for sure whether a new tab being opened is that of a popup, or is the result of a legitimate click on a link by the user. So if the no-popups switch is in use, you _may_ not be able to open a link in a new tab through the context menu.
+**Предостережение для браузеров основанных на Chromium:** Из-за ограничений Chromium API, _не всегда_ возможно точно определить является ли новая открытая вкладка всплывающим окном или же результатом обычного нажатия на ссылку пользователем. Поэтому при включённой блокировке всплывающих окон, _возможно_ Вы не сможете открыть ссылку в новый вкладке через контекстное меню.
 
 ***
 
-## No large media elements
+## Блокировка больших медиа-элементов
 
-The second icon is to toggle on/off the blocking of large media elements for the current site. The primary purpose of this feature is to save bandwidth. Side effect is to possibly speed up page load.
+Второй значок -- это включение/выключение блокировки больших медиа-элементов для текущего сайта. Основная цель этой функции -- уменьшить нагрузку на сеть, но также это может ускорить загрузку страницы.
 
-![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1h.png)<br><sup>The badge shows the number of large media elements that have been blocked on the page.</sup>
+![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1h.png)<br><sup>Значок показывает количество больших медиа-элементов, заблокированных на странице.</sup>
 
 By default, this setting is disabled. The global default can be enabled in the _Settings_ pane in the dashboard.
 
@@ -63,7 +64,7 @@ Examples of usefulness (let's say you just stumbled onto these pages not knowing
 
 ***
 
-## No cosmetic filtering
+## Отключение косметических фильтров
 
 "Cosmetic filtering" in uBO is what is known as ["element hiding"](https://adblockplus.org/filters#elemhide) in Adblock Plus.
 
@@ -89,7 +90,7 @@ To disable cosmetic filtering everywhere by default, go to the [_Settings_ pane 
 
 ***
 
-## No remote fonts
+## Блокировка сторонних шрифтов
 
 You can prevent web fonts from being downloaded for the current site:
 
