@@ -32,7 +32,7 @@
 
 ![Popup UI](https://raw.githubusercontent.com/gorhill/uBlock/master/doc/img/popup-1h.png)<br><sup>Значок показывает количество больших медиа-элементов, заблокированных на странице.</sup>
 
-By default, this setting is disabled. The global default can be enabled in the _Settings_ pane in the dashboard.
+По умолчанию эта настройка отключена. Также глобальная  The global default can be enabled in the _Settings_ pane in the dashboard.
 
 ![a](https://cloud.githubusercontent.com/assets/585534/12380164/2575ee24-bd3a-11e5-8743-24da038463f8.png)
 
