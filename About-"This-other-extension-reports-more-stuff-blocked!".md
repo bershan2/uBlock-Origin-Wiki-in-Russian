@@ -1,5 +1,5 @@
 # Об "А другое расширение говорит что заблокировало больше!"
-Оригинал [_About "This other extension reports more stuff blocked!"_](https://github.com/gorhill/uBlock/wiki/About-"This-other-extension-reports-more-stuff-blocked%21") от 9 мар. 2016.
+Перевод на русский язык оригинала [_About "This other extension reports more stuff blocked!"_](https://github.com/gorhill/uBlock/wiki/About-"This-other-extension-reports-more-stuff-blocked%21") от 9 мар. 2016.
 
 Кратко: **Не** стоит полагаться на счётчик на значке расширения при оценке эффективности фильтра, т.е. насколько хороша защита Вашей конфиденциальности, Вы можете сильно ошибиться.
 
