@@ -1,5 +1,6 @@
 # Подборка видео демонстрирующих разницу в скорости загрузки сложных сайтов
-Оригинал [_Various videos showing side by side comparison of the load speed of complex sites_](https://github.com/gorhill/uBlock/wiki/Various-videos-showing-side-by-side-comparison-of-the-load-speed-of-complex-sites) от 26 мар. 2015 переведён 9 апр. 2017.
+
+Перевод на русский язык оригинала [_Various videos showing side by side comparison of the load speed of complex sites_](https://github.com/gorhill/uBlock/wiki/Various-videos-showing-side-by-side-comparison-of-the-load-speed-of-complex-sites) от 26 мар. 2015.
 
 Видео можно загрузить здесь: <https://github.com/gorhill/uBlock/tree/master/doc/media>.
 
@@ -11,6 +12,6 @@
 
 [![ABP vs uBlock](http://img.youtube.com/vi/SzJr4hmPlgQ/0.jpg)](https://www.youtube.com/watch?v=SzJr4hmPlgQ)
 
-#### Загрузенность ЦПУ на синтетических тестах
+#### Загруженность ЦПУ на синтетических тестах
 
 [![ABP vs uBlock](http://img.youtube.com/vi/X8tGAPYLGtI/0.jpg)](https://www.youtube.com/watch?v=X8tGAPYLGtI)
