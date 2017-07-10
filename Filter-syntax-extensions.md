@@ -1,1 +1,0 @@
-Moved to <https://github.com/gorhill/uBlock/wiki/Static-filter-syntax>.
